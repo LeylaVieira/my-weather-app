@@ -1,0 +1,98 @@
+.current {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__main {
+        margin-bottom: 1rem;
+    }
+
+    &__date {
+        text-align: center;
+        font-size: .8rem;
+        font-style: italic;
+        margin-bottom: .5rem;
+    }
+
+    &__city {
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid var(--white);
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+
+    &__temps {
+        text-align: center;
+    }
+
+    &__infos {
+        padding-top: 1rem;
+        border-top: 1px solid var(--white);
+    }
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+
+    &:after {
+        content: 'º';
+        display: inline-block;
+    }
+
+    &--big {
+        font-size: 3rem;
+        justify-content: center;
+    }
+
+    &--min:before {
+        font-family: var(--font-icons);
+        content: '\e90d';
+        display: inline-block;
+    }
+
+    &--max:before {
+        font-family: var(--font-icons);
+        content: '\e90c';
+        display: inline-block;
+    }
+
+    &__group {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__description {
+        font-size: .8rem;
+        font-style: italic;
+    }
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 50%;
+    }
+
+    &__label {
+        margin-right: .5rem;
+    }
+}

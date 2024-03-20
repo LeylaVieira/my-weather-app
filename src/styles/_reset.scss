@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'WeatherIcons';
+    src:  url('../assets/fonts/WeatherIcons.eot?opvtnf');
+    src:  url('../assets/fonts/WeatherIcons.eot?opvtnf#iefix') format('embedded-opentype'),
+        url('../assets/fonts/WeatherIcons.ttf?opvtnf') format('truetype'),
+        url('../assets/fonts/WeatherIcons.woff?opvtnf') format('woff'),
+        url('../assets/fonts/WeatherIcons.svg?opvtnf#WeatherIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --dark: #222222;
+    --white: #F5F5F5;
+
+    --font-icons: 'WeatherIcons';
+
+    --mobile: 320px;
+    --tablet: 740px;
+    --desktop: 980px;
+    --wide: 1300px;
+
+    font-family: "Lato", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+a, button {
+    cursor: revert;
+}
+
+ol, ul, menu, summary {
+    list-style: none;
+}
+
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input, textarea {
+    -webkit-user-select: auto;
+}
+
+textarea {
+    white-space: revert;
+}
+
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+:where(pre) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: unset;
+}
+
+:where([hidden]) {
+    display: none;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+    display: none;
+}

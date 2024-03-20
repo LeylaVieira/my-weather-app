@@ -1,0 +1,35 @@
+/*clear sky*/
+.bg-01d {
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+.bg-01n {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+
+/*few clouds*/
+.bg-02d { background: linear-gradient(to bottom, #60abe5 0%,#f9c768 100%); }
+.bg-02n { background-image: linear-gradient(to bottom, #09203f 0%,#728491 62%,#537895 100%); }
+
+/*scattered clouds*/
+.bg-03d, .bg-03n { background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+background-blend-mode: screen; }
+
+/*broken clouds*/
+.bg-04d, .bg-04n { background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light; }
+
+/*shower rain*/
+.bg-09d, .bg-09n { background-image: linear-gradient(to bottom, #a8caba 0%, #5d4157 100%); } 
+
+/*rain*/
+.bg-10d { background: linear-gradient(to bottom, #537895 0%,#b7bfbc 85%,#f7e87b 100%);}
+.bg-10n { background: linear-gradient(to bottom, #537895 0%,#b7bfbc 51%,#46548c 100%); }
+
+/*thunderstorm*/
+.bg-11d, .bg-11n { background: linear-gradient(to bottom, #1d293a 0%,#b7bfbc 52%,#2c3d59 100%); } 
+
+/*snow*/
+.bg-13d, .bg-13n { background: linear-gradient(to bottom, #848484 0%,#c3cccb 100%); } 
+
+/*mist*/
+.bg-50d, .bg-50n { background: linear-gradient(to bottom, #381a44 0%,#4d296d 11%,#9f9ea3 69%,#b5b5b5 86%,#ddcd90 100%);  } 

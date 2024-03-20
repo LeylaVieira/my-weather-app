@@ -1,0 +1,18 @@
+.forecast {
+    border: 1px solid blue;
+
+    &__title {
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        border: 1px solid green;
+        text-align: center;
+    }
+}
